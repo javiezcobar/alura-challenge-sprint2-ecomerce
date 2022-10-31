@@ -27,6 +27,7 @@
     border-radius: 20px;
     padding: .5rem 1rem;
     background: var(--gris-50);
+    width: 395px;
 }
 
 .header__search__button {

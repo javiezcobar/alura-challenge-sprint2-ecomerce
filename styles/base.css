@@ -6,11 +6,12 @@ Variables del documento
 
     --gris-50: #F5F5F5;
 	--gris-70: #E8E8E8;
-	
+
 	--negro-100: #464646;
 	--negro-50: #a2a2a2;
 
 	--azul-100:#2A7AE4;
+	--azul-10:#EAF2FD;
 }
 
 /* 
@@ -18,7 +19,7 @@ Reset de estilos por defecto
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h4, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
