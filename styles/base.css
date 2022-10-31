@@ -2,8 +2,12 @@
 Variables del documento
 */
 :root {
+	--blanco-100: #FFFFFF;
+
     --gris-50: #F5F5F5;
 	--gris-70: #E8E8E8;
+	
+	--negro-100: #464646;
 	--negro-50: #a2a2a2;
 
 	--azul-100:#2A7AE4;
@@ -55,4 +59,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: var(--negro-100);
 }

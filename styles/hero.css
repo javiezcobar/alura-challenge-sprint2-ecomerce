@@ -1,0 +1,32 @@
+.hero {
+    display: flex;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 41.15%, rgba(0,0,0,0.8) 100%), url(../assets/champinon.jpg) center/cover, no-repeat;
+    height: 352px;
+    align-items: flex-end;
+    color: var(--blanco-100);
+    padding: 0 10rem;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.hero__title {
+    font: 700 52px/61px 'Raleway';
+}
+
+.hero__subtext {
+    font: 700 22px / 26px 'Raleway';
+}
+
+.hero__button {
+    padding: 1rem 2rem;
+    border: 1px solid var(--azul-100);
+    background: var(--azul-100);
+    color: var(--blanco-100);
+}

@@ -1,11 +1,12 @@
 .header {
-    padding: 0 152px;
+    padding: 0 10rem;
 }
 
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 0;
 }
 
 .container {
@@ -45,7 +46,7 @@
 }
 
 .header__login__button {
-    padding: 8px 32px;
+    padding: .5rem 3rem;
     border: 1px solid var(--azul-100);
     background: none;
     color: var(--azul-100);
