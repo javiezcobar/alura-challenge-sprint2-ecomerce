@@ -1,0 +1,69 @@
+@media (max-width: 768px) {
+    .header, .hero, .products {
+        padding: 0 2rem;
+    }
+
+    .contact, .footer {
+        padding: 1rem 2rem;
+    }
+
+    .header__search__input {
+        width: 200px;
+    }
+    
+
+    .products__item:nth-last-child(-n+2) {
+        display: none;
+    }
+
+    .contact__logo__desktop {
+        display: none;
+    }
+
+    .contact__logo__tablet {
+        display: inherit;
+    }
+
+    .contact__form {
+        width: 50%;
+      }
+}
+
+@media (max-width: 368px){
+    .header, .hero, .products {
+        padding: 0 1rem;
+    }
+
+    .contact, .footer {
+        padding: .5rem 1rem;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .hero__container {
+        gap: 8px;
+    }
+
+    .hero__title {
+        font: 700 22px/24px 'Raleway';
+    }
+
+    .hero__subtext {
+        font: 500 16px/18px 'Raleway';
+    }
+
+    .products__item:nth-last-child(-n+4) {
+        display: none;
+    }
+
+    .contact__container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact__nav {
+        align-items: center;
+    }
+}
