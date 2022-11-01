@@ -1,0 +1,57 @@
+.contact {
+    padding: 4rem 10rem;
+    background: var(--azul-10);
+}
+
+.contact__container {
+    display: flex;
+    gap: 7rem;
+}
+
+.contact__nav {
+    flex-direction: column;
+    display: flex;
+    gap: 1.5rem;
+    font: 500 16px/19px 'Raleway'
+}
+
+.contact__form__title {
+    font: 700 16px/19px 'Raleway';
+}
+
+.contact__form__item {
+    position: relative;
+    display: flex;
+    background: var(--blanco-100);
+    height: 48px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.contact__form__input {
+    font: 300 16px 'Raleway';
+    border: none;
+    outline: 0;
+}
+
+.contact__form__label {
+    font: 300 16px 'Raleway';
+    position: absolute;
+    align-self: center;
+    left: 4px;
+    transition: 0.5s;
+}
+
+.contact__form__input:valid,
+.contact__form__input:focus {
+    margin-top: 8px;
+}
+
+.contact__form__input:valid + .contact__form__label,
+.contact__form__input:focus + .contact__form__label {
+    
+    font: 300 12px 'Raleway';
+    align-self: flex-start;
+}
+
+

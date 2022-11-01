@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/contact.css">
 
 </head>
 
@@ -173,9 +174,32 @@
                     <h4>producto XYZ</h4>
                     <span class="products__item__price">$ 60,00</span>
                     <a class="products__item__link" href="#">Ver producto</a>
-                </li>
-                
+                </li>                
             </ul>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact__container">
+            <img src="assets/Logo.svg" alt="logo">
+            <ul class="contact__nav">
+                <li class="contact__nav__item">Quienes somos</li>
+                <li class="contact__nav__item">Politica de privacidad</li>
+                <li class="contact__nav__item">Programas de fidelidad</li>
+                <li class="contact__nav__item">Nuestras tiendas</li>
+                <li class="contact__nav__item">Quiero ser franquiciado</li>
+                <li class="contact__nav__item">Anúncie aqui</li>
+            </ul>
+            <form action="submit" class="contact__form">
+                <fieldset>
+                    <legend class="contact__form__title">Hable con Nosotros</legend>
+                    <div class="contact__form__item">
+                        <input class="contact__form__input" type="text" required>
+                        <label class="contact__form__label" for="username">Nombre</label>
+                        <div class="contact__form__slash"></div>
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </section>
 </body>
