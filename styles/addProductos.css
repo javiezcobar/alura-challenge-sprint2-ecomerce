@@ -1,0 +1,24 @@
+.main__container {
+    padding: 5rem 0;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.main__form__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__form__title {
+    font: 700 18px/20px 'Raleway';
+    text-align: center;
+    width: 100%;
+}
+
+.main__button {
+    padding: 1rem 2rem;
+    border: 1px solid var(--azul-100);
+    background: var(--azul-100);
+    color: var(--blanco-100);
+}
