@@ -29,7 +29,7 @@
       }
 }
 
-@media (max-width: 368px){
+@media (max-width: 428px){
     .header, .hero, .products {
         padding: 0 1rem;
     }
