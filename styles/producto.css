@@ -1,0 +1,89 @@
+.product {
+    padding: 1rem 10rem;
+}
+
+.product__container {
+    padding: 3rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.product__container img {
+    width: 160vw;
+}
+
+.product__title {
+    font: 700 4rem/4rem 'Raleway';
+}
+
+.product__price {
+    font: 700 18px/20px 'raleway';
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px){
+    .header, .products, .contact, .footer {
+        padding: 2rem;
+    }
+
+    .header__search__input {
+        width: 200px;
+    }
+
+    .product__container img {
+        width: 100vw;
+    }
+
+    .product__title {
+        font: 700 2rem/2rem 'Raleway';
+    }
+
+    .contact__logo__desktop {
+        display: none;
+    }
+
+    .contact__logo__tablet {
+        display: inherit;
+    }
+
+    .contact__form {
+        width: 100%;
+      }
+}
+
+@media (max-width: 428px){
+
+    .header, .products, .contact, .footer {
+        padding: 1rem;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .product__container {
+        flex-direction: column;
+    }
+
+    .products__list {
+        flex-wrap: wrap;
+    }
+    .product__container img {
+        width: 90vw;
+    }
+
+    .contact__container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact__nav {
+        align-items: center;
+    }
+
+    .contact__form {
+        width: 100%;
+      }
+}
+

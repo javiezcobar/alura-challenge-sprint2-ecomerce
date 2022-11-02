@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Login de Usuario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/products.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/producto.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="container">
+                <img class="header__logo" src="../assets/Logo.svg" alt="logo Alura Geek">
+                <div class="header__search">
+                    <input class="header__search__input" type="text" placeholder="¿Qué deseas buscar?">
+                    <button class="header__search__button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="products">
+
+            <div class="product__container">
+                <img src="../assets/producto1.jpg" alt="producto XYZ">
+                <div class="product__container__specs">
+                    <h1 class="product__title">Producto XYZ</h1>
+                    <p class="product__price">$ 60.00</p>
+                    <p class="product__description">Voluptas voluptatum quibusdam similique, class debitis alias
+                        maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse
+                        distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste
+                        recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus,
+                        dolorum do. Animi porta anim magnam</p>
+                </div>
+            </div>
+
+        <div class="products__line">
+            <div class="products__line__head">
+                <h3 class="products__line__title">Productos similares</h3>
+            </div>
+            <ul class="products__list">
+
+                <li class="products__item">
+                    <img class="products__item__img" src="../assets/producto1.jpg" alt="foto product1">
+                    <h4>producto XYZ</h4>
+                    <span class="products__item__price">$ 60,00</span>
+                    <a class="products__item__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__item">
+                    <img class="products__item__img" src="../assets/producto2.jpg" alt="foto product1">
+                    <h4>producto XYZ</h4>
+                    <span class="products__item__price">$ 60,00</span>
+                    <a class="products__item__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__item">
+                    <img class="products__item__img" src="../assets/producto3.jpg" alt="foto product1">
+                    <h4>producto XYZ</h4>
+                    <span class="products__item__price">$ 60,00</span>
+                    <a class="products__item__link" href="#">Ver producto</a>
+                </li>
+                <li class="products__item">
+                    <img class="products__item__img" src="../assets/producto4.jpg" alt="foto product1">
+                    <h4>producto XYZ</h4>
+                    <span class="products__item__price">$ 60,00</span>
+                    <a class="products__item__link" href="#">Ver producto</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <div class="contact__container">
+            <img class="contact__logo__desktop" src="../assets/Logo.svg" alt="logo">
+            <ul class="contact__nav">
+                <img class="contact__logo__tablet" src="../assets/Logo.svg" alt="logo">
+                <li class="contact__nav__item">Quienes somos</li>
+                <li class="contact__nav__item">Politica de privacidad</li>
+                <li class="contact__nav__item">Programas de fidelidad</li>
+                <li class="contact__nav__item">Nuestras tiendas</li>
+                <li class="contact__nav__item">Quiero ser franquiciado</li>
+                <li class="contact__nav__item">Anúncie aqui</li>
+            </ul>
+            <form action="submit" class="contact__form">
+                <fieldset>
+                    <legend class="contact__form__title">Hable con Nosotros</legend>
+                    <div class="contact__form__item">
+                        <input class="contact__form__input" type="text" required>
+                        <label class="contact__form__label" for="username">Nombre</label>
+                        <div class="contact__form__slash"></div>
+                    </div>
+
+                    <div class="contact__form__item">
+                        <textarea class="contact__form__textarea" name="mensaje" placeholder="Escribe tu mensaje"
+                            cols="30" rows="10" required></textarea>
+                        <div class="contact__form__slash"></div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h3 class="footer__title">Desarrollado por Fulana de Tal</h3>
+        <p class="footer__subtext">2021</p>
+    </section>
+
+</body>
+
+</html>
