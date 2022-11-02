@@ -1,0 +1,34 @@
+.products__list {
+    flex-wrap: wrap;
+}
+
+.main__button {
+    padding: 1rem .5rem;
+    border: 1px solid var(--azul-100);
+    background: var(--azul-100);
+    color: var(--blanco-100);
+}
+
+.products__item {
+    position: relative;
+}
+
+.products__item__subtext {
+    font: 500 16px/18px 'Raleway';
+}
+
+.Product__item__edit {
+    display: none;
+    gap: 16px;
+    color: var(--blanco-100);
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    padding: 4px;
+}
+
+.products__item:hover .Product__item__edit {
+    display: flex;
+    
+}
+

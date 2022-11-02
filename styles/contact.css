@@ -80,6 +80,7 @@
     outline: 0;
     border: 0;
     font: 300 16px 'Raleway';
+    width: 100%;
 }
 
 .contact__form__textarea:valid ~ .contact__form__slash,
