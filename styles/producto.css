@@ -47,9 +47,6 @@
         display: inherit;
     }
 
-    .contact__form {
-        width: 100%;
-      }
 }
 
 @media (max-width: 428px){
@@ -82,8 +79,5 @@
         align-items: center;
     }
 
-    .contact__form {
-        width: 100%;
-      }
 }
 

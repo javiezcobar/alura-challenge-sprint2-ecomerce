@@ -1,11 +1,11 @@
 .contact {
-    padding: 4rem 10rem;
+    padding: 4rem 10%;
     background: var(--azul-10);
 }
 
 .contact__container {
     display: flex;
-    gap: 7rem;
+    gap: 7%;
 }
 
 .contact__nav {
@@ -89,7 +89,7 @@
 }
 
 .contact__form {
-    width: 40%;
+    width: 100%;
 }
 
 .contact__logo__tablet {

@@ -6,10 +6,6 @@
     .contact, .footer {
         padding: 1rem 2rem;
     }
-
-    .header__search__input {
-        width: 200px;
-    }
     
 
     .products__item:nth-last-child(-n+2) {
@@ -24,9 +20,6 @@
         display: inherit;
     }
 
-    .contact__form {
-        width: 50%;
-      }
 }
 
 @media (max-width: 428px){
@@ -54,7 +47,11 @@
         font: 500 16px/18px 'Raleway';
     }
 
-    .products__item:nth-last-child(-n+4) {
+    .products__list{
+        flex-wrap: wrap;
+    }
+
+    .products__item:nth-last-child(-n+2) {
         display: none;
     }
 
@@ -65,5 +62,18 @@
 
     .contact__nav {
         align-items: center;
+    }
+}
+
+
+@media (max-width: 960px){
+    .header__search__input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 640px){
+    .header__search {
+        display: none;
     }
 }
