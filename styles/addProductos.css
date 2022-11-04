@@ -22,3 +22,15 @@
     background: var(--azul-100);
     color: var(--blanco-100);
 }
+
+.contact__form__input {
+    width: 100%;
+}
+
+.file {
+    margin-top: 10px;
+}
+
+.file:focus {
+    margin-top: 10px;
+}
