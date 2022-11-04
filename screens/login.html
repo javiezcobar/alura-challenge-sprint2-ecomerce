@@ -32,23 +32,23 @@
     </header>
 
     <section class="products">
-        <form action="../screens/Productos.html" class="main__container">
+        <form action="" class="main__container">
             <fieldset class="main__form__container">
                 <legend class="main__form__title">Iniciar Sesión</legend>
 
                 <div class="contact__form__item">
-                    <input class="contact__form__input" type="text" required>
+                    <input class="contact__form__input" type="email" data-email>
                     <label class="contact__form__label" for="email">Escriba su correo electronico</label>
                     <div class="contact__form__slash"></div>
                 </div>
 
                 <div class="contact__form__item">
-                    <input class="contact__form__input" type="password" required>
+                    <input class="contact__form__input" type="password" data-password>
                     <label class="contact__form__label" for="password">Escriba su contraseña</label>
                     <div class="contact__form__slash"></div>
                 </div>
 
-                <button class="main__button" type="submit">Entrar</button>
+                <button class="main__button" type="submit" data-submit>Entrar</button>
             </fieldset>
         </form>
     </section>
@@ -88,5 +88,6 @@
         <p class="footer__subtext">2021</p>
     </section>
     
+    <script src="../scripts/validacion.js"></script>
 </body>
 </html>
