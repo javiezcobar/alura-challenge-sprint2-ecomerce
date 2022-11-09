@@ -1,0 +1,10 @@
+{
+  "productos": [
+    {
+      "id": "12314",
+      "img": "../assets/producto1.jpg",
+      "titulo": "Producto XYZ",
+      "precio": 60
+    }
+  ]
+}
