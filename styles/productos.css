@@ -15,6 +15,10 @@
 
 .products__item__subtext {
     font: 500 16px/18px 'Raleway';
+    width: 100px;
+    height: 20px;
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
 }
 
 .Product__item__edit {

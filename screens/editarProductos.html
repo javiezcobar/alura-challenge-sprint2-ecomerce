@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek - Login de Usuario</title>
+    <title>AluraGeek - agregar un producto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/base.css">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../styles/contact.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/responsive.css">
-    <link rel="stylesheet" href="../styles/productos.css">
+    <link rel="stylesheet" href="../styles/addProductos.css">
 </head>
 <body>
 
@@ -32,17 +32,42 @@
     </header>
 
     <section class="products">
+        <form action="submit" class="main__container" data-form>
+            <fieldset class="main__form__container">
+                <legend class="main__form__title">Editar un producto</legend>
 
-        <div class="products__line">
-            <div class="products__line__head">
-                <h3 class="products__line__title">Todos los Productos</h3>
-                <button class="main__button" onclick="location.href='../screens/addProductos.html'" >Agregar Producto </button>
-            </div>
-            <ul class="products__list" data-product-list>
-                  
-            </ul>
-        </div>
+                <div class="contact__form__item">
+                    <input class="contact__form__input  file" type="file" accept="image/png, image/gif, image/jpeg" required name="imagen" data-imagen>
+                    <div class="contact__form__slash"></div>
+                </div>
 
+                <div class="contact__form__item">
+                    <input class="contact__form__input" type="text" required name="categoria" data-categoria>
+                    <label class="contact__form__label">Categoria</label>
+                    <div class="contact__form__slash"></div>
+                </div>
+
+                <div class="contact__form__item">
+                    <input class="contact__form__input" type="text" maxlength="20" required name="nombre" data-nombre>
+                    <label class="contact__form__label">Nombre del producto</label>
+                    <div class="contact__form__slash"></div>
+                </div>
+
+                <div class="contact__form__item">
+                    <input class="contact__form__input" type="number" required name="precio" data-precio>
+                    <label class="contact__form__label">Precio del producto</label>
+                    <div class="contact__form__slash"></div>
+                </div>
+
+                <div class="contact__form__item">
+                    <input class="contact__form__input" type="text" maxlength="150" required name="descripcion" data-descripcion>
+                    <label class="contact__form__label">Descripcion del producto</label>
+                    <div class="contact__form__slash"></div>
+                </div>
+
+                <button class="main__button">Editar producto</button>
+            </fieldset>
+        </form>
     </section>
 
     <section class="contact">
@@ -79,6 +104,6 @@
         <h3 class="footer__title">Desarrollado por Fulana de Tal</h3>
         <p class="footer__subtext">2021</p>
     </section>
-<script src="../controllers/productos.controller.js" type="module"></script>
+<script src="../controllers/actualizar.controller.js" type="module"></script>
 </body>
 </html>
