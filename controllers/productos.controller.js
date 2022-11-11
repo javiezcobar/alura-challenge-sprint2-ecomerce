@@ -1,3 +1,5 @@
+import { productServices } from "../services/products-services.js";
+
 const listaDeProductos = document.querySelector('[data-product-list]')
 
 const crearNuevoProducto = (img, nombre, precio, id) => {
@@ -11,8 +13,14 @@ const crearNuevoProducto = (img, nombre, precio, id) => {
     <p class="products__item__subtext">#${id}</p>
     <div class="Product__item__edit">
         <a href="../screens/editarProductos.html?id=${id}"><i class="fa-solid fa-pen"></i></a>
-        <i class="fa-solid fa-trash"></i> </div>`;
+        <button id="${id}"> <i class="fa-solid fa-trash"></i> </button>
+    </div>`;
     item.innerHTML = contenido;
+    const btn = item.querySelector("button");
+    btn.addEventListener('click', () => {
+        productServices.borrarProductos(id);
+        alert("se elimino el producto");
+    })
     return item;
 }
 

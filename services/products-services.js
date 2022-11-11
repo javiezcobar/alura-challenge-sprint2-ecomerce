@@ -1,4 +1,4 @@
-async function encodeImg(file){
+async function encodeImg(file) {
     return new Promise(resolve => {
         const reader = new FileReader();
         reader.addEventListener('loadend', () => {
@@ -21,7 +21,7 @@ const crearProducto = (imagen, categoria, nombre, precio, descripcion) => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({imagen, categoria, nombre, precio, descripcion, id: uuid.v4() })
+        body: JSON.stringify({ imagen, categoria, nombre, precio, descripcion, id: uuid.v4() })
     })
 }
 
@@ -34,7 +34,13 @@ const actualizarProducto = (imagen, categoria, nombre, precio, descripcion, id) 
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({imagen, categoria, nombre, precio, descripcion, id })
+        body: JSON.stringify({ imagen, categoria, nombre, precio, descripcion, id })
+    })
+}
+
+const borrarProductos = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`, {
+        method: "DELETE"
     })
 }
 
@@ -44,5 +50,6 @@ export const productServices = {
     encodeImg,
     crearProducto,
     detalleProducto,
-    actualizarProducto
+    actualizarProducto,
+    borrarProductos,
 }

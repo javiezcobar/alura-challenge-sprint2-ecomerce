@@ -32,12 +32,6 @@ const obtenerInformacion = async () => {
         console.log(imagen.files)
         imagen.files = dataTransfer.files;
     });
-
-
-
-    // 
-    //
-    // 
 }
 
 obtenerInformacion()

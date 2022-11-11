@@ -1,3 +1,8 @@
+button {
+    border: none;
+    background: none;
+}
+
 .products__list {
     flex-wrap: wrap;
 }
