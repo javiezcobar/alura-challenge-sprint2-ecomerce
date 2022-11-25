@@ -1,4 +1,5 @@
 import { productServices } from "../services/products-services.js";
+import { imageServices } from "../services/image-services.js";
 
 const formulario = document.querySelector('[data-form]')
 
@@ -7,7 +8,7 @@ formulario.addEventListener("submit", async e => {
 
     let form = new FormData(formulario);
 
-    const img = await productServices.encodeImg(form.get("imagen"));
+    const img = await imageServices.encodeImg(form.get("imagen"));
     console.log(img)
 
     productServices
